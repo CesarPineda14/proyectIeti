@@ -1,10 +1,10 @@
 package org.escuelaing.eci.repository.user;
 
 public class UserDto {
-    private final String name;
-    private final String lastName;
-    private final String email;
-    private final String password;
+    private String name;
+    private String lastName;
+    private String email;
+    private String password;
 
     public UserDto() {
         this.name = "";
@@ -27,6 +27,7 @@ public class UserDto {
         this.password = "";
     }
 
+    // Getters
     public String getName() {
         return name;
     }
@@ -41,5 +42,22 @@ public class UserDto {
 
     public String getPassword() {
         return password;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
